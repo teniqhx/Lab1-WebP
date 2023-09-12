@@ -1,0 +1,367 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+p{
+    color: aliceblue;
+    font-size: 14px;
+    margin: 7px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.left-content{
+    display: flex;
+    background-color: #192b94;
+    flex-direction: column;
+}
+
+.h3{
+    background-color: #12086F;
+    margin-bottom: 3px;
+}
+
+.h3 h3{
+    color: aliceblue;
+    margin-left: 4px;
+    padding: 2px;
+}
+
+.fullname{
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 50;
+}
+
+.name-rank{
+    color: aliceblue;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.name-rank p{
+    font-size: 22px;
+}
+
+.hard-skills{
+    overflow: hidden;
+}
+
+.expandable-div {
+    width: 100%; 
+    height: 0px; 
+    background-color: #192b94; 
+    transition: height 1.5s ease-in-out; 
+}
+
+.hard-skills:hover .expandable-div{
+    height: 116px; 
+}
+
+
+
+
+
+
+.skill-bar2{
+    height: 10px;
+    border-radius: 5px;
+    background: aliceblue;
+    margin-left: 14px;
+    margin-right: 14px;
+    overflow: hidden; 
+    width: 0; 
+}
+
+.skill-percentage2{
+    margin: 0;
+    height: 10px;
+    border-radius: 3px;
+    background: #12086F;
+    position: relative;
+    overflow: hidden; 
+    width: 0; 
+}
+
+.skill-percentage2::before{
+    content: attr(a);
+    position: absolute;
+    color: aliceblue;
+    font-size: 12px;
+    top: 12px;
+    right: 0%;
+}
+
+.hard-skills:hover .skill-bar2 {
+    animation: expandSkillBarHover 1.5s ease-in-out forwards;
+}
+
+.hard-skills:hover .skill-percentage2 {
+    animation: expandSkillBarPercentageHover 2s ease-in-out forwards;
+}
+
+.hard-skills:not(:hover) .skill-bar2 {
+    animation: expandSkillBarHoverReverse 2s ease-in-out forwards;
+}
+
+.hard-skills:not(:hover) .skill-percentage2 {
+    animation: expandSkillBarPercentageHoverReverse 1.5s ease-in-out forwards;
+}
+
+@keyframes expandSkillBarHover {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%; 
+    }
+}
+
+@keyframes expandSkillBarPercentageHover {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: attr(style); 
+    }
+}
+
+@keyframes expandSkillBarHoverReverse {
+    0% {
+        width: 90%;
+    }
+    100% {
+        width: 0%; 
+    }
+}
+
+@keyframes expandSkillBarPercentageHoverReverse {
+    0% {
+        width: attr(style);
+    }
+    100% {
+        width: 0; 
+    }
+}
+
+
+
+
+
+.soft-skills{
+    overflow: hidden;
+}
+
+.soft-skills:hover .expandable-div{
+    height: 116px; 
+}
+
+.soft-skills:hover .skill-bar2 {
+    animation: expandSkillBarHover 1.5s ease-in-out forwards;
+}
+
+.soft-skills:hover .skill-percentage2 {
+    animation: expandSkillBarPercentageHover 2s ease-in-out forwards;
+}
+
+.soft-skills:not(:hover) .skill-bar2 {
+    animation: expandSkillBarHoverReverse 2s ease-in-out forwards;
+}
+
+.soft-skills:not(:hover) .skill-percentage2 {
+    animation: expandSkillBarPercentageHoverReverse 1.5s ease-in-out forwards;
+}
+
+
+
+
+
+.skill-bar{
+    height: 10px;
+    border-radius: 5px;
+    background: aliceblue;
+    margin-left: 14px;
+    margin-right: 14px;
+    overflow: hidden; 
+    width: 0; 
+    animation: expandSkillBar 1.5s ease-in-out forwards;
+}
+
+@keyframes expandSkillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%; 
+    }
+}
+
+.skill-percentage{
+    margin: 0;
+    height: 10px;
+    border-radius: 3px;
+    background: #12086F;
+    position: relative;
+    overflow: hidden; 
+    width: 0;
+    animation: expandSkillBarPercentage 2s ease-in-out forwards;
+}
+
+@keyframes expandSkillBarPercentage {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: attr(style); 
+    }
+}
+
+.skill-percentage::before{
+    content: attr(a);
+    position: absolute;
+    color: aliceblue;
+    font-size: 12px;
+    top: 12px;
+    right: 0%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.links a{
+    color: #000000;
+}
+
+.links a:hover{
+    transform: scale(.8); 
+    color: aliceblue;
+}
+
+.image-link {
+    display: inline-block;
+    margin-top: -5px; 
+    margin-right: 10px;
+    transform: scale(1); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.fa-brands {
+    font-size: 40px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    min-width: 79.5%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.right-content h2{
+    color: #192b94;
+    margin: 5px;
+}
+
+.stick{
+    border-radius: 5px;
+    margin-top: 5px;
+    margin: 5px;
+    height: 1.5px;
+    background: #d0d0d0;
+}
+
+.info-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-content-date{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.info-content-date p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info-content-fill{
+    flex-grow: 1;
+    margin: 0;
+}
+
+.info-content-fill h3{
+    text-align: center;
+}
+
+.info-content-fill ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-content-fill li{
+    margin: 4px;
+}
+
+
+.clock{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.digital-clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
