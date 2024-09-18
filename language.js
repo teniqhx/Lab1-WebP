@@ -1,0 +1,45 @@
+document.getElementById('english-btn').addEventListener('click', function() {
+    document.getElementById('name').textContent = 'Timshyn Danil';
+    document.getElementById('job-title').textContent = 'Software Engineer';
+    document.getElementById('personal-info-heading').textContent = 'Personal info';
+    document.getElementById('phone-label').textContent = 'Phone';
+    document.getElementById('email-label').textContent = 'E-mail';
+    document.getElementById('hard-skills-heading').textContent = 'Hard-skills';
+    document.getElementById('skill-js').textContent = 'JavaScript';
+    document.getElementById('skill-html').textContent = 'HTML';
+    document.getElementById('skill-css').textContent = 'CSS';
+    document.getElementById('soft-skills-heading').textContent = 'Soft-skills';
+    document.getElementById('skill-communication').textContent = 'Communication';
+    document.getElementById('skill-empathy').textContent = 'Empathy';
+    document.getElementById('skill-patience').textContent = 'Patience';
+    document.getElementById('contacts-heading').textContent = 'Contacts';
+    document.getElementById('education-heading').textContent = 'Education';
+    document.getElementById('university').textContent = 'Cherkasy State Technological University, Software Engineering';
+    document.getElementById('edu-point1').textContent = 'Passionate about learning JavaScript and developing web applications using the Express framework';
+    document.getElementById('edu-point2').textContent = 'Studied databases and used them to store and organize data in my projects';
+    document.getElementById('edu-point3').textContent = 'Created a project using .NET where I developed an application that uses the Caesar cipher to encrypt and decrypt messages';
+    document.getElementById('edu-point4').textContent = 'Deepened my interest in software testing during the training course. Used various testing methods and tools to ensure the reliability and performance of the software product';
+});
+
+document.getElementById('ukrainian-btn').addEventListener('click', function() {
+    document.getElementById('name').textContent = 'Тімшин Даніл';
+    document.getElementById('job-title').textContent = 'Інженер-програміст';
+    document.getElementById('personal-info-heading').textContent = 'Особиста інформація';
+    document.getElementById('phone-label').textContent = 'Телефон';
+    document.getElementById('email-label').textContent = 'Електронна пошта';
+    document.getElementById('hard-skills-heading').textContent = 'Технічні навички';
+    document.getElementById('skill-js').textContent = 'JavaScript';
+    document.getElementById('skill-html').textContent = 'HTML';
+    document.getElementById('skill-css').textContent = 'CSS';
+    document.getElementById('soft-skills-heading').textContent = "М'які навички";
+    document.getElementById('skill-communication').textContent = 'Комунікація';
+    document.getElementById('skill-empathy').textContent = 'Емпатія';
+    document.getElementById('skill-patience').textContent = 'Терпіння';
+    document.getElementById('contacts-heading').textContent = 'Контакти';
+    document.getElementById('education-heading').textContent = 'Освіта';
+    document.getElementById('university').textContent = 'Черкаський державний технологічний університет, Програмна інженерія';
+    document.getElementById('edu-point1').textContent = 'Захоплююсь вивченням JavaScript і розробкою веб-додатків з використанням фреймворку Express';
+    document.getElementById('edu-point2').textContent = 'Вивчав бази даних та використовував їх для зберігання й організації даних у моїх проєктах';
+    document.getElementById('edu-point3').textContent = 'Створив проєкт на .NET, де розробив додаток, що використовує шифр Цезаря для шифрування та дешифрування повідомлень';
+    document.getElementById('edu-point4').textContent = 'Поглибив своє зацікавлення тестуванням програмного забезпечення під час навчального курсу. Використовував різні методи та інструменти тестування для забезпечення надійності й продуктивності програмного продукту';
+});
