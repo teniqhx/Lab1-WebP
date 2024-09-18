@@ -349,7 +349,7 @@ caption {
 
 th, td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -363,4 +363,21 @@ td {
 
 td:hover {
     background-color: #f0f0f0;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-buttons {
+    display: flex;
+}
+
+.language-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
