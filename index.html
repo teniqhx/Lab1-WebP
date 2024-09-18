@@ -8,21 +8,23 @@
     <script src="https://kit.fontawesome.com/b860ddfc5a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+
     <div class="main">
         <div class="left-content">
             <div class="name-rank">
-                <h1 class="fullname">Timshyn Danil</h1>
-                <p>Software Engineer</p>
+                <h1 class="fullname" id="name">Timshyn Danil</h1>
+                <p id="job-title">Software Engineer</p>
             </div>
 
             <div class="personal-info">
                 <div class="h3">
-                    <h3>Personal info</h3>
+                    <h3 id="personal-info-heading">Personal info</h3>
                 </div>
-                <p style="font-weight: 600;">Phone</p>
+                <p style="font-weight: 600;" id="phone-label">Phone</p>
                 <p>+38(063)660-27-70</p>
 
-                <p style="font-weight: 600;">E-mail</p>
+                <p style="font-weight: 600;" id="email-label">E-mail</p>
                 <p>teniqhx@gmail.com</p>
             </div>
 
@@ -64,6 +66,7 @@
                 </div>
             </div>
 
+
             <div class="soft-skills">
                 <div class="h3">
                     <h3>Soft-skills</h3>
@@ -104,25 +107,30 @@
 
             <div class="contacts">
                 <div class="h3">
-                    <h3>Contacts</h3>
+                    <h3 id="contacts-heading">Contacts</h3>
                 </div>
                 <div class="links">
                     <a href="https://t.me/teniqhx" class="image-link">
-                        <i class="fa-brands fa-telegram" ></i>
+                        <i class="fa-brands fa-telegram"></i>
                     </a>
                     <a href="https://github.com/teniqhx" class="image-link">
-                        <i class="fa-brands fa-github" ></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
-                
             </div>
 
         </div>
         <div class="right-content">
-
             <div class="stick"></div>
 
-            <h2>Education</h2>
+            <div class="education-container">
+                <h2 id="education-heading">Education</h2>
+                
+                <div class="language-buttons">
+                    <button id="english-btn">English</button>
+                    <button id="ukrainian-btn">Українська</button>
+                </div>
+            </div>
 
             <div class="stick"></div>
 
@@ -132,29 +140,30 @@
                 </div>
 
                 <div class="info-content-fill">
-                    <h3>Cherkasy State Technological University, Software Engineering</h3>
+                    <h3 id="university">Cherkasy State Technological University, Software Engineering</h3>
                     <ul>
-                        <li>Passionate about learning JavaScript and developing web applications using the Express framework</li>
-                        <li>Studied databases and used them to store and organize data in my projects</li>
-                        <li>Created a project using .NET where I developed an application that uses the Caesar cipher to encrypt and decrypt messages</li>
-                        <li>Deepened my interest in software testing during the training course. Used various testing methods and tools to ensure the reliability and performance of the software product,
-                             including development of test scenarios, automated testing and analysis of results</li>
+                        <li id="edu-point1">Passionate about learning JavaScript and developing web applications using the Express framework</li>
+                        <li id="edu-point2">Studied databases and used them to store and organize data in my projects</li>
+                        <li id="edu-point3">Created a project using .NET where I developed an application that uses the Caesar cipher to encrypt and decrypt messages</li>
+                        <li id="edu-point4">Deepened my interest in software testing during the training course. Used various testing methods and tools to ensure the reliability and performance of the software product</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="clock">
-                <div class="digital-clock">
-                    <span class="hours">00</span>:
-                    <span class="minutes">00</span>:
-                    <span class="seconds">00</span>
-                </div>
-            </div>
-
             <div id="calendar"></div>
         </div>
+
+        <div class="clock">
+            <div class="digital-clock">
+                <span class="hours">00</span>:
+                <span class="minutes">00</span>:
+                <span class="seconds">00</span>
+            </div>
+        </div>
+
+        
     </div>
     <script src="./clock.js"></script>
     <script src="./calendar.js"></script>
+    <script src="./language.js"></script>
 </body>
 </html>
